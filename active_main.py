@@ -140,7 +140,7 @@ def main(args):
     # select senmatic contrast model
     model_senmatic = C.get_classifier(args.model, n_classes=args.n_classes).to(device)
     # get linear predict shift
-    model_senmatic = C.get_shift_classifer(model_senmatic, args.K_shift).to(device)
+    model_senmatic = C.get_shift_classifer(model_senmatic, 1).to(device)
 
     criterion = nn.CrossEntropyLoss().to(device)
 
