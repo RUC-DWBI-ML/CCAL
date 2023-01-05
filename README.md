@@ -48,6 +48,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node
 * **Option** 
 * For CIFAR10, set --datatset cifar10, else set --datatset cifar100.
 * In our experiment, we set --epoch 700 in cfar10 and --epoch 2000 in cifar100 .
+* In our experiment, we set --model resnet18 for all datasets.
 * And we set mismatch = 0.2, 0.4, 0.6, 0.8.
 
 
