@@ -14,7 +14,7 @@ import random
 from utils.utils import Logger
 from utils.utils import save_checkpoint
 from utils.utils import save_linear_checkpoint
-from evals.total.eval import test_classifier
+from evals.eval import test_classifier
 import os
 import numpy as np
 from utils.utils import set_random_seed
